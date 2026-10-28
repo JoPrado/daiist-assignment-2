@@ -1,0 +1,58 @@
+Training on NVIDIA GeForce RTX 5070 Laptop GPU
+loading Roboflow workspace...
+loading Roboflow project...
+Dataset in datasets\fabric-defect-thesis-1
+       images  unique_originals  Hole  Seam  Stitch
+split                                              
+train    6568              2140  2597  1685    4499
+valid     362               362   138   102     233
+test      179               179    84    32     124 
+
+Box area as % of image (10th / median / 90th percentile):
+               10%    50%    90%
+split class                     
+test  Hole    0.13   0.66  11.73
+      Seam    3.25   7.43  19.79
+      Stitch  1.88   5.66  18.67
+train Hole    0.16   1.11   9.86
+      Seam    6.59  15.93  36.61
+      Stitch  2.09   9.47  28.19
+valid Hole    0.20   1.32  13.55
+      Seam    3.43   9.72  20.37
+      Stitch  1.25   5.69  16.05
+status  ambiguous   kept  leak
+split                         
+test          166    550     0
+train        8518  17634    30
+valid         412   1036     0 
+
+       tiles  defect_tiles  Hole  Seam  Stitch  clean_tiles  defect_share
+split                                                                    
+train  17634         10731  3028  2702    6118         6903         0.609
+valid   1036           589   172   164     300          447         0.569
+test     550           296   105    52     172          254         0.538
+Reusing C:\Users\Lutox\Documents\IE\5th Year\Designing AI & Smart Tech\daiist-assignment-2\runs\fabric\weights\best.pt
+Saved weights\fabric_defect_yolo11s.pt
+1 epochs; best val mAP50-95 0.002 at epoch 1
+Ultralytics 8.4.191  Python-3.12.14 torch-2.11.0+cu128 CUDA:0 (NVIDIA GeForce RTX 5070 Laptop GPU, 12231MiB)
+YOLO11s summary (fused): 100 layers, 9,413,961 parameters, 0 gradients, 21.4 GFLOPs
+WARNING [34m[1mval: [0mSlow image access detected (ping: 0.0±0.0 ms, read: 21.3±5.8 MB/s, size: 62.3 KB). Use local storage instead of remote/mounted storage for better performance. See https://docs.ultralytics.com/guides/model-training-tips
+[K[34m[1mval: [0mScanning C:\Users\Lutox\Documents\IE\5th Year\Designing AI & Smart Tech\daiist-assignment-2\datasets\fabric-defect-thesis-1-tiles\test\labels... 128 images, 68 backgrounds, 0 corrupt: 23% ━━╸───────── 128/550 382.0it/s 0.1s<1.1s[K[34m[1mval: [0mScanning C:\Users\Lutox\Documents\IE\5th Year\Designing AI & Smart Tech\daiist-assignment-2\datasets\fabric-defect-thesis-1-tiles\test\labels... 265 images, 126 backgrounds, 0 corrupt: 48% ━━━━━╸────── 265/550 675.3it/s 0.2s<0.4s[K[34m[1mval: [0mScanning C:\Users\Lutox\Documents\IE\5th Year\Designing AI & Smart Tech\daiist-assignment-2\datasets\fabric-defect-thesis-1-tiles\test\labels... 407 images, 189 backgrounds, 0 corrupt: 74% ━━━━━━━━╸─── 407/550 898.3it/s 0.3s<0.2s[K[34m[1mval: [0mScanning C:\Users\Lutox\Documents\IE\5th Year\Designing AI & Smart Tech\daiist-assignment-2\datasets\fabric-defect-thesis-1-tiles\test\labels... 550 images, 254 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 550/550 1.4Kit/s 0.4s
+[34m[1mval: [0mNew cache created: C:\Users\Lutox\Documents\IE\5th Year\Designing AI & Smart Tech\daiist-assignment-2\datasets\fabric-defect-thesis-1-tiles\test\labels.cache
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 2% ──────────── 1/35 1.9it/s 0.2s<18.3s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 8% ━─────────── 3/35 4.7it/s 0.3s<6.8s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 14% ━╸────────── 5/35 7.5it/s 0.5s<4.0s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 20% ━━────────── 7/35 10.7it/s 0.6s<2.6s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 25% ━━━───────── 9/35 12.7it/s 0.7s<2.0s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 31% ━━━╸──────── 11/35 14.3it/s 0.8s<1.7s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 37% ━━━━──────── 13/35 14.8it/s 0.9s<1.5s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 42% ━━━━━─────── 15/35 15.8it/s 1.1s<1.3s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 48% ━━━━━╸────── 17/35 16.2it/s 1.2s<1.1s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 54% ━━━━━━╸───── 19/35 16.8it/s 1.3s<1.0s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 60% ━━━━━━━───── 21/35 17.0it/s 1.4s<0.8s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 65% ━━━━━━━╸──── 23/35 17.3it/s 1.5s<0.7s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 71% ━━━━━━━━╸─── 25/35 17.3it/s 1.6s<0.6s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 77% ━━━━━━━━━─── 27/35 17.4it/s 1.7s<0.5s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 82% ━━━━━━━━━╸── 29/35 17.6it/s 1.8s<0.3s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 88% ━━━━━━━━━━╸─ 31/35 17.9it/s 2.0s<0.2s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 94% ━━━━━━━━━━━─ 33/35 17.5it/s 2.1s<0.1s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 35/35 16.0it/s 2.2s
+                   all        550        329    0.00121      0.588    0.00434   0.000984
+Speed: 0.0ms preprocess, 1.1ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to [1mC:\Users\Lutox\Documents\IE\5th Year\Designing AI & Smart Tech\daiist-assignment-2\runs\test_eval[0m
+        test_boxes  precision  recall   AP50  mAP50-95
+class                                                 
+Hole           105      0.001   0.286  0.002     0.000
+Seam            52      0.002   0.712  0.004     0.001
+Stitch         172      0.001   0.767  0.007     0.002
+all            329      0.001   0.588  0.004     0.001
+
+Confusion matrix (rows predicted, columns true):
+                 true Hole  true Seam  true Stitch  true background
+pred Hole                9          0            0            41769
+pred Seam                1          1            4            24243
+pred Stitch             43         49          139            94918
+pred background         52          2           29                0
